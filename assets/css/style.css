@@ -1,0 +1,200 @@
+/* Every page css */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    text-indent: 15px;
+    color: #777;
+    background-image: url('./../images/light_honeycomb_@2X.png');
+    line-height: 20px;
+}
+
+section div p {
+    margin: 0px 15px;
+}
+
+header {
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Code Pro', monospace;
+    color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+    float: right;
+}
+
+nav h1 a {
+    color: #fff;
+}
+
+hr {
+    margin-top: 25px;
+    background-color: #777;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    clear: both;
+    background-color: #666;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 8px solid #343a40;
+}
+
+/* About Me Page Classes and IDs */
+.menubar {
+    height: 75px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+.logo {
+    background: #343a40;
+    float: left;
+    height: 100%;
+    margin: auto;
+    padding: 10px 10px 0px 0px;
+}
+
+.rightmenu {
+    padding-top: 25px;
+    color: #777;
+}
+
+.rightmenu:hover {
+    color: #777;
+    font-size:20px;
+}
+
+.menu {
+    max-width:960px;
+    margin: auto;
+    height: 75px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.main {
+    max-width:960px;
+    height: 75vh;
+    margin: auto;
+    background-color: #343a40;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+}
+
+.topdiv {
+    font-family: 'Source Code Pro', monospace;
+    padding: 30px;
+    font-size: 25px;
+}
+
+
+.headshot {
+    width:30%;
+}
+
+.img1 {
+    width: 100%;
+
+}
+
+.headshot {
+    float: left;
+    width: 30%;
+    margin-right: 30px;
+}
+
+.totalcontent{
+margin: auto;
+padding-right:10px;
+}
+
+/* Portfolio Page Classes and IDs */
+
+div a {
+    color: white;
+}
+
+.portfolio {
+    width:33%;
+    padding: 20px;
+    float: left;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.txt {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-33%,-10%);
+    background-color: #343a40;
+    width:87.5%;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.img {
+    border: 1px solid #ccc;
+    height: 150px;
+}
+
+/* CSS Classes and IDs for contact page */
+
+form {
+    font-family: 'Source Code Pro', monospace;
+    color: #777;
+    font-size: 20px;
+    width: 95%;
+    margin: 0px 15px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.formsubmit {
+    margin: 0px;
+}
+
+.textarea {
+    padding: 50px;
+}
+
+ .button {
+    font-family: 'Source Code Pro', monospace;
+     background-color: #343a40;
+     color: #fff;
+     padding:10px;
+     font-size: 20px;
+ }
+
+ #source-font {
+    font-family: 'Source Code Pro', monospace;
+}
