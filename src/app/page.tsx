@@ -48,7 +48,7 @@ export default function Home() {
 
 
 function HextechCard({ title, description }: { title: string; description: string; }) {
-  return <div className="border border-gold-5 outline outline-gold-5 outline-offset-2 p-5">
+  return <div className="border border-gold-5 outline outline-gold-5 outline-offset-2 p-5 space-y-1">
     <h4 className="text-4xl hextech-gold-gradient border-b border-gold-5">{title}</h4>
     <p className={`${spiegel.className} text-2xl`}>{description}</p>
   </div>
