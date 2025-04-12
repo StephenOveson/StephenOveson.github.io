@@ -21,7 +21,7 @@ export default function Home() {
             <section className="grid lg:grid-cols-2 gap-4">
 
               <HextechCard title="Frontend" description="React, Next.js, TypeScript, JavaScript, SCSS" />
-              <HextechCard title="Backend" description="RNode.js, Golang, Java, REST/GraphQL APIs" />
+              <HextechCard title="Backend" description="Node.js, Golang, Java, REST/GraphQL APIs" />
               <HextechCard title="Tools & Platforms" description="AWS, Storybook, MySQL, Figma" />
               <HextechCard title="Soft Skills" description="Mentorship, Collaboration, Agile Development" />
             </section>
