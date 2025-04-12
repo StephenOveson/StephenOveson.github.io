@@ -53,7 +53,7 @@ export default function Header() {
                         <Link className={pathname === "/" ? "border-b-2 border-gold-3" : ""} onClick={() => setIsNavOpen(false)} href="/">Home</Link>
                     </li>
                     <li className="my-8 uppercase text-xl">
-                        <Link className={pathname === "/resume" ? "border-b-2 border-gold-3" : ""} onClick={() => setIsNavOpen(false)} href="/about">Resume</Link>
+                        <Link className={pathname === "/resume" ? "border-b-2 border-gold-3" : ""} onClick={() => setIsNavOpen(false)} href="/resume">Resume</Link>
                     </li>
                     {/* <li className="my-8 uppercase text-xl">
                         <Link className={pathname === "/samples" ? "border-b-2 border-gold-3" : ""} onClick={() => setIsNavOpen(false)} href="/services">Samples</Link>
