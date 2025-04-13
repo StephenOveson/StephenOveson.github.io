@@ -43,7 +43,7 @@ export default function Teamfight() {
     })
 
     const handleDragStart: DragEventHandler<HTMLDivElement> = (e) => {
-        setDragging(e.currentTarget?.querySelector('img')?.dataset?.src || "");
+        setDragging(e.currentTarget?.dataset?.src || "");
     };
 
     const handleDragEnter: DragEventHandler<SVGSVGElement> = (e) => {
@@ -70,10 +70,10 @@ export default function Teamfight() {
         </div>
         <section className="grid grid-cols-2 lg:grid-cols-8 gap-3 py-10">
             {data?.[1]?.filter(([key]) => !key.toLowerCase().includes("tutorial"))?.sort((a, b) => a?.[1].tier - b?.[1].tier).map(([key, value]) => (
-                <div key={key} className={`relative ${beaufort.className}`} draggable onDragStart={handleDragStart} onDragEnd={() => setDragging("")}>
+                <div key={key} data-src={`https://ddragon.leagueoflegends.com/cdn/${data?.[0]}/img/tft-champion/${value.image.full}`} className={`relative ${beaufort.className}`} draggable onDragStart={handleDragStart} onDragEnd={() => setDragging("")}>
                     <p className="absolute bottom-0 inline px-3 bg-hextech-black">{value.name}</p>
                     <p className="absolute bottom-0 right-0 inline px-1 bg-hextech-black">{value.tier}</p>
-                    <Image className="object-cover" data-src={`https://ddragon.leagueoflegends.com/cdn/${data?.[0]}/img/tft-champion/${value.image.full}`} alt={value.name} src={`https://ddragon.leagueoflegends.com/cdn/${data?.[0]}/img/tft-champion/${value.image.full}`} height={600} width={600} />
+                    <Image className="object-cover" alt={value.name} src={`https://ddragon.leagueoflegends.com/cdn/${data?.[0]}/img/tft-champion/${value.image.full}`} height={600} width={600} />
                 </div>
             ))}
         </section>
