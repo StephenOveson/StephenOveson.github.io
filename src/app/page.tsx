@@ -33,12 +33,12 @@ export default function Home() {
 
       <article className={`${spiegel.className} mx-auto py-10`}>
 
-        <section className="flex flex-col items-center">
+        <section className="flex flex-col space-y-5 items-center">
           <h2 className={`${beaufort.className}`}>🏆 Other Notables</h2>
-          <ul className="space-y-5 list-disc">
-            <li>Former Head Coach for League of Legends teams at Zenith and Azio Esports</li>
-            <li>Winner of multiple tournaments including Indy PopCon and Wichita Open</li>
-            <li>Experienced in SEO, WordPress, and freelance consulting</li>
+          <ul className="gap-5 grid lg:grid-cols-3">
+            <HextechCard description="Former Head Coach for League of Legends teams at Zenith and Azio Esports"></HextechCard>
+            <HextechCard description="Winner of multiple tournaments including Indy PopCon and Wichita Open"></HextechCard>
+            <HextechCard description="Experienced in SEO, WordPress, and freelance consulting"></HextechCard>
           </ul>
         </section>
       </article>
@@ -47,9 +47,9 @@ export default function Home() {
 }
 
 
-function HextechCard({ title, description }: { title: string; description: string; }) {
-  return <div className="border border-gold-5 outline outline-gold-5 outline-offset-2 p-5 space-y-1">
-    <h4 className="text-4xl hextech-gold-gradient border-b border-gold-5">{title}</h4>
+function HextechCard({ title, description }: { title?: string; description: string; }) {
+  return <div className={`border-2 border-gold-5 outline-2 outline-gold-5 outline-offset-3 p-5 space-y-1 ${!title ? "text-gold-1 bg-radial-[at_25%_25%] from-blue-3 to-blue-5" : ""}`}>
+    {title && <h4 className="text-4xl hextech-gold-gradient border-b border-gold-5">{title}</h4>}
     <p className={`${spiegel.className} text-2xl`}>{description}</p>
   </div>
 }
