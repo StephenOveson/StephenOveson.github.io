@@ -33,7 +33,7 @@ export default function Home() {
     }
     return <section className={`py-30 w-5/6 min-h-screen mx-auto ${beaufort.className}`}>
         <form onSubmit={onSubmit} className="grid gap-4">
-            <h1 className="text-5xl border-b-2 border-gold-5 uppercase">Let's Collaborate</h1>
+            <h1 className="text-5xl border-b-2 border-gold-5 uppercase">Develop your vision</h1>
             <p className={`text-2xl ${spiegel.className}`}>Looking for a software developer who can solve your problems? Fill out the form below, and I will get back to you as soon as possible.</p>
             {success === "Email sent" ? <h2 className="text-2xl text-green-400">{success}</h2> : <h2 className="text-2xl text-red-500">{success}</h2>}
             <input className="rounded-sm p-4 border border-gold-5 text-xl text-white focus-visible:outline-gold-5 placeholder-gold-4/[0.3]" required placeholder="Name" type="text" name="name" value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} />
