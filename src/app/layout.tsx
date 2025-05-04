@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { spiegel } from "@/fonts";
 import Providers from "./providers";
-
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Stephen Oveson",
@@ -26,6 +26,7 @@ export default function RootLayout({
             {children}
           </main>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
